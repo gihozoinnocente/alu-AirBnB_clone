@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Static</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Static</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+      header {
+        background-color: #ff0000;
+        height: 70px;
+        width: 100%;
+      }
 
-    header {
-      background-color: #FF0000;
-      height: 70px;
-      width: 100%;
-    }
+      main {
+        flex: 1;
+      }
 
-    main {
-      flex: 1;
-    }
+      footer {
+        background-color: #00ff00;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+      }
+    </style>
+  </head>
 
-    footer {
-      background-color: #00FF00;
-      height: 60px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      bottom: 0;
-    }
-  </style>
-</head>
+  <body>
+    <header></header>
 
-<body>
+    <main></main>
 
-  <header></header>
-
-  <main>
-  </main>
-
-  <footer>
-    <p style="margin: 0; padding: 0; color: white;">Best School</p>
-  </footer>
-
-</body>
-
+    <footer>
+      <p style="margin: 0; padding: 0; color: white">Best School</p>
+    </footer>
+  </body>
 </html>

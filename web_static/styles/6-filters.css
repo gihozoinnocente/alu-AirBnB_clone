@@ -12,18 +12,37 @@
   
   .locations,
   .amenities {
+    position: relative;
     height: 100%;
     width: 25%;
     border-right: 1px solid #DDDDDD;
+    padding: 10px;
   }
   
   h3 {
     font-weight: 600;
+    cursor: pointer;
   }
   
-  h4 {
-    font-weight: 400;
-    font-size: 14px;
+  ul.popover {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+  }
+  
+  ul.popover h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  ul.popover ul {
+    padding-left: 20px;
   }
   
   .search-btn {
@@ -41,5 +60,13 @@
   
   .search-btn:hover {
     opacity: 90%;
+  }
+  
+  .filters .locations:hover .popover {
+    display: block;
+  }
+  
+  .filters .amenities:hover .popover {
+    display: block;
   }
   
